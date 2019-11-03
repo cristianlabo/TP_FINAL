@@ -154,10 +154,13 @@ int main(void){
 
          /* Se reenvía el dato a la UART_USB realizando un eco de lo que llega */
          //uartWriteByte( UART_232,'1');
-    	 uartWriteString( UART_232, texto_auxiliar );
+    	 //uartWriteString( UART_232, texto_auxiliar );
+    	  //uartWriteByte( UART_232, dato );
     	  //itoa( dato, uartBuff, 10 ); /* base 10 significa decimal */
     	  //uartWriteString( UART_232, uartBuff );
-
+    	  uartWriteByte( UART_232, dato );
+    	  uartWriteByte( UART_232, '\r' );
+    	  uartWriteByte( UART_232, '\n' );
       }
 
 
