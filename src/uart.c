@@ -159,6 +159,8 @@ int main(void){
     	  //itoa( dato, uartBuff, 10 ); /* base 10 significa decimal */
     	  //uartWriteString( UART_232, uartBuff );
     	  uartWriteByte( UART_232, dato );
+    	  while(  uartReadByte( UART_232, &dato ) )
+    		  uartWriteByte( UART_232, dato );
     	  uartWriteByte( UART_232, '\r' );
     	  uartWriteByte( UART_232, '\n' );
       }
