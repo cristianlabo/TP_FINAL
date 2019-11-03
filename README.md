@@ -7,7 +7,7 @@
 
 #  TP_FINAL
 
-Sistema de monitore de temperatura
+Sistema de monitoreo de temperatura
 
 # Objetivo
 - Implementacion de un sistema de monitoreo de temperatura
